@@ -1,26 +1,10 @@
-<p align="center">
-<img src="https://github.com/gorouflex/Sandy/blob/main/Img/HoneygainPot/Banner.png"/>            
-</p>
-<h1 align="center">HoneygainPot - Project Sandy</h1>
-<h4 align="center">🐝 Automatically claim your Honeygain lucky pot every day 🍯</h4>
-<h4 align="center">Powered by GitHub Actions 🐙 and Python 🐍</h4>
-<p align="center">
-<img alt="GitHub issues" src="https://img.shields.io/github/issues/gorouflex/HoneygainPot?style=flat">
-<img src="https://img.shields.io/github/forks/gorouflex/HoneygainPot?style=flat">
-</p>
-<p align="center">
-<img src="https://img.shields.io/github/stars/gorouflex/HoneygainPot?style=flat">
-<img alt="GitHub watchers" src="https://img.shields.io/github/watchers/gorouflex/HoneygainPot?style=flat">
-<img src="https://img.shields.io/github/contributors/gorouflex/HoneygainPot?style=flat">
-</p>
-<p align="center">
-<a href="https://github.com/gorouflex/HoneygainPot/actions/workflows/codeql.yml"><img src="https://github.com/gorouflex/HoneygainPot/actions/workflows/codeql.yml/badge.svg"></a>
-<a href="https://github.com/gorouflex/HoneygainPot/actions/workflows/cl.yml"><img src="https://github.com/gorouflex/HoneygainPot/actions/workflows/cl.yml/badge.svg"></a>
-</p>
-<p align="center">
-<a href="https://github.com/gorouflex/HoneygainPot/actions/workflows/daily.yml"><img src="https://github.com/gorouflex/HoneygainPot/actions/workflows/daily.yml/badge.svg"></a>
-<a href="https://github.com/gorouflex/HoneygainPot/actions/workflows/manual.yml"><img src="https://github.com/gorouflex/HoneygainPot/actions/workflows/manual.yml/badge.svg"></a> (*)
-</p>
+<picture><img align="left" src="https://github.com/gorouflex/Sandy/blob/main/Img/HoneygainPot/SmallLogo.png" width="20%"/></picture>
+<h1>HoneygainPot - Project Sandy</h1>
+<h3>🐝 Automatically claim your Honeygain lucky pot every day 🍯</h3>
+<h4>Powered by GitHub Actions 🐙 and Python 🐍</h4>
+
+#
+
 <p align="center">
   <a href="https://github.com/gorouflex/HoneygainPot/">English 🇺🇸</a>
   •
@@ -41,6 +25,26 @@
   •
   <a href="#disclaimer">Disclaimer</a>
 </p>
+
+<p align="center">
+<img alt="GitHub issues" src="https://img.shields.io/github/issues/gorouflex/HoneygainPot?style=flat">
+<img src="https://img.shields.io/github/forks/gorouflex/HoneygainPot?style=flat">
+</p>
+<p align="center">
+<img src="https://img.shields.io/github/stars/gorouflex/HoneygainPot?style=flat">
+<img alt="GitHub watchers" src="https://img.shields.io/github/watchers/gorouflex/HoneygainPot?style=flat">
+<img src="https://img.shields.io/github/contributors/gorouflex/HoneygainPot?style=flat">
+</p>
+<p align="center">
+<a href="https://github.com/gorouflex/HoneygainPot/actions/workflows/codeql.yml"><img src="https://github.com/gorouflex/HoneygainPot/actions/workflows/codeql.yml/badge.svg"></a>
+<a href="https://github.com/gorouflex/HoneygainPot/actions/workflows/cl.yml"><img src="https://github.com/gorouflex/HoneygainPot/actions/workflows/cl.yml/badge.svg"></a>
+</p>
+<p align="center">
+<a href="https://github.com/gorouflex/HoneygainPot/actions/workflows/daily.yml"><img src="https://github.com/gorouflex/HoneygainPot/actions/workflows/daily.yml/badge.svg"></a>
+<a href="https://github.com/gorouflex/HoneygainPot/actions/workflows/manual.yml"><img src="https://github.com/gorouflex/HoneygainPot/actions/workflows/manual.yml/badge.svg"></a> (*)
+</p>
+
+#
 
 ### [Honeygain](https://r.honeygain.me/BADBO762DE) is a service that allows you to earn **passive income** by **sharing** your **internet** connection with businesses for web statistics, price comparison, and other verified business processes.
 
@@ -71,33 +75,30 @@
 ## Use JWT Token
 
   1. Go to your Honeygain Dashboard or click [here](https://dashboard.honeygain.com/) and log in to your Honeygain account.
-  2. Open the browser's console by pressing `F12` button ( or `Fn+F12` on some laptops ).
-  3. Click on the tab `Application` than click to `Local storage` and click to `https://dashboard.honeygain.com`; then you will see the key `JWT` that includes your token, copy this for the next steps.
-  4. [Fork this repository 🍴](https://github.com/gorouflex/HoneygainPot/fork).
-  5. Go to your forked repository 🍴.
-  6. Go to `Settings > Secrets and Variables > Actions`, and click `New Repository secret`.
-  7. Use `JWT_TOKEN` and paste your JWT Token from Steps 3.
-  8. Go to [`.github/workflows/daily.yml`](https://github.com/gorouflex/HoneygainPot/blob/main/.github/workflows/daily.yml) and [`.github/workflows/manual.yml`](https://github.com/gorouflex/HoneygainPot/blob/main/.github/workflows/manual.yml) and set `IsJWT` to 1 like this `IsJWT: 1`.
-  9. Go to your forked repository 🍴 and go to the Actions tab and press `I understand my workflows, go ahead and enable them`.
+  2. Open the browser's console by pressing `F12` button ( or `Fn+F12` on some laptops )
+  3. Click on the tab `Application` than click to `Local storage` and click to `https://dashboard.honeygain.com`; then you will see key `JWT` that includes your token, copy this for next steps
+  4. [Fork this repository 🍴](https://github.com/gorouflex/HoneygainPot/fork)
+  5. Go to your forked repository 🍴
+  6. Go to `Settings > Secrets and Variables > Actions`, and click `New Repository secret`
+  7. Use `JWT_TOKEN` and paste your JWT Token from Steps 3. Create another secret and use `IsJWT` set to `true`.
+  8. Go to your forked repository 🍴 and go to the Actions tab and press `I understand my workflows, go ahead and enable them`
+
 
 <p align="left">
   <img src="https://github.com/gorouflex/Sandy/blob/main/Img/HoneygainPot/get_token.png">
   <img src="https://github.com/gorouflex/Sandy/blob/main/Img/HoneygainPot/GitSettings-Token.png">
-  <img src="https://github.com/gorouflex/Sandy/blob/main/Img/HoneygainPot/IsJWT(1).png">
 </p>
 
 ## Use Mail and Password
 
-  1. [Fork this repository 🍴](https://github.com/gorouflex/HoneygainPot/fork).
-  2. Go to your forked repository 🍴.
-  3. Go to `Settings > Secrets and Variables > Actions`, and click `New Repository secret`.
-  4. For the secret name, use `MAIL` and set your Honeygain mail and `PASS` for your password.
-  5. Go to [`.github/workflows/daily.yml`](https://github.com/gorouflex/HoneygainPot/blob/main/.github/workflows/daily.yml) and [`.github/workflows/manual.yml`](https://github.com/gorouflex/HoneygainPot/blob/main/.github/workflows/manual.yml) and set `IsJWT` to 0 like this `IsJWT: 0`.
-  6. Go to your forked repository 🍴 and go to the Actions tab and press `I understand my workflows, go ahead and enable them`.
+  1. [Fork this repository 🍴](https://github.com/gorouflex/HoneygainPot/fork)
+  2. Go to your forked repository 🍴
+  3. Go to `Settings > Secrets and Variables > Actions`, and click `New Repository secret`
+  4. For the secret name, use `MAIL` and set your Honeygain email and `PASS` for your password and `IsJWT` set to `false`.
+  5. Go to your forked repository 🍴 and go to the Actions tab and press `I understand my workflows, go ahead and enable th
 
 <p align="left">
   <img src="https://github.com/gorouflex/Sandy/blob/main/Img/HoneygainPot/GitSettings.png">
-  <img src="https://github.com/gorouflex/Sandy/blob/main/Img/HoneygainPot/IsJWT(0).png">
 </p>
 
 # Config
